@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+  <!-- The default theme, used for standard Plone web pages -->
+  <theme href="index.html" css:if-content="#visual-portal-wrapper" />
+
+  <!-- Rules applying to a standard Plone web page -->
+  <rules css:if-content="#visual-portal-wrapper">
+    <!-- Add meta tags -->
+    <drop theme="/html/head/meta" />
+    <before content="/html/head/meta" theme-children="/html/head" />
+    <before content="/html/head/base" theme-children="/html/head" />
+
+    <!-- use plone given title -->
+    <replace css:content="head title" css:theme="head title" />
+    <drop css:content="head meta[name='viewport']" />
+    <!-- drop plone favicon, use from theme -->
+    <drop css:content="head link[rel='shortcut icon']" />
+    <!-- drop css files from theme -->
+    <drop css:theme="head link[rel='stylesheet']" />
+
+    <!-- Copy style, script and link tags in the order they appear in the content -->
+    <after
+        content="/html/head/style | /html/head/script | /html/head/link"
+        theme-children="/html/head"
+        />
+    <drop theme="/html/head/style" />
+    <drop theme="/html/head/script" />
+
+    <!-- Copy over the id/class attributes on the body tag.
+         This is important for per-section styling -->
+    <copy attributes="class" css:content="body" css:theme="body" />
+
+    <!-- Logo (link target) -->
+    <copy attributes="href" css:content="#portal-logo" css:theme="#portal-logo" />
+
+    <!-- Site actions -->
+    <replace css:theme="#portal-searchbox" css:content="#portal-searchbox" />
+
+    <!-- personal -->
+    <replace css:theme="#portal-personaltools" css:content="#portal-personaltools" />
+    <replace css:theme="#portal-siteactions" css:content="#portal-siteactions" />
+
+    <!-- Global navigation -->
+    <prepend css:theme="#portal-globalnav" css:content="#portal-globalnav > *" />
+
+    <drop css:content="#portal-breadcrumbs" />
+    <!-- Columns -->
+    <replace css:content-children="#portal-column-content > *" css:theme-children="#portal-column-content" />
+    <replace css:if-content=".section-front-page" css:content-children="#portal-column-one" css:theme-children="#portal-column-one" />
+    <replace css:if-content=".template-manage-portlets" css:content-children="#portal-column-one" css:theme-children="#portal-column-one" />
+
+    <replace css:content-children="#portal-column-two" css:theme-children="#portal-column-two" />
+
+    <replace css:if-content="#portal-column-one .portletNavigationTree .navTree li" css:content-children="#portal-column-one .portletNavigationTree .navTree" css:theme-children="#subnavig .navTree" />
+    <drop css:if-content=".section-front-page" css:theme="#subnavig" />
+    <drop css:content=".documentByLine" />
+    <drop css:content=".navTreeLevel1" />
+  </rules>
+
+</rules>

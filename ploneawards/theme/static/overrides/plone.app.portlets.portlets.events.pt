@@ -1,0 +1,43 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      tal:omit-tag="">
+<dl class="portlet portletEvents"
+    i18n:domain="plone">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <span
+           class="tile"
+           i18n:translate="box_events">
+            Upcoming Events
+        </span>
+        <span class="portletTopRight"></span>
+        <span class="newsArchive"><a tal:attributes="href string:${context/portal_url}/agenda/">Overzicht</a></span>
+    </dt>
+
+    <tal:events tal:define="toLocalizedTime nocall:context/@@plone/toLocalizedTime;
+                            DateTime python:modules['DateTime'].DateTime"
+                tal:repeat="obj view/published_events">
+    <dd class="portletItem"
+        tal:define="oddrow repeat/obj/odd;
+                    plone_view context/@@plone;
+                    getIcon nocall:plone_view/getIcon;
+                    item_icon python:getIcon(obj);
+                    item_startdate python:toLocalizedTime(obj.start);"
+        tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
+
+        <div class="startdate" tal:content="python:item_startdate"></div>
+        <a href="#"
+           class="tile"
+           tal:attributes="href obj/getURL;
+                           title obj/Description">
+            <span tal:replace="obj/pretty_title_or_id">
+             Some Event
+            </span>
+        </a>
+    </dd>
+    </tal:events>
+
+</dl>
+</html>
