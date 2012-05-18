@@ -56,7 +56,7 @@ dl.portlet .portletHeader {
     float: right;
     margin-top: 60px;
     text-align: right;
-    width: 390px;
+    width: 530px;
 }
 #portal-globalnav {
     margin: 0;
@@ -67,7 +67,7 @@ dl.portlet .portletHeader {
     clear: both;
 }
 .email, .phone {
-    color: #787878;
+    color: #92d0f9;
     font-size: 80%;
 }
 .email img, .phone img {
@@ -279,10 +279,6 @@ dl.portlet .portletHeader {
     margin: 0;
     padding: 20px 10px 20px 50px;
 }
-
-.section-front-page #portal-column-one {
-    margin-left: 8px;
-}
 dl.portlet dd.portletItem {
     margin: 0 20px;
     padding: 0;
@@ -313,13 +309,13 @@ dl.portlet li {
     width: 460px;
 }
 .section-front-page #portal-column-content {
-    width: 980px;
+    width: 966px;
 }
 .section-front-page #portal-column-content #content {
     background-image: url(../images/homepage_line.png);
     background-repeat: no-repeat;
     background-position: bottom;
-    padding: 10px 30px;
+    padding: 10px 20px;
 }
 .section-front-page #portal-column-content {
     background-image: url(../images/homepage_line.png);
