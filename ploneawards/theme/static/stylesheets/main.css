@@ -595,3 +595,15 @@ dl.actionMenu {
 #caroussel {
     border: 8px solid #fff;
 }
+#portal-columns,
+#subnavig {
+    padding: 0 8px;
+}
+#subnavig {
+    width: 966px;
+}
+#subnavig .portletItem {
+    background-image: url("../images/subnavig_back.png");
+    background-position: -16px 50%;
+    background-repeat: no-repeat;
+}
