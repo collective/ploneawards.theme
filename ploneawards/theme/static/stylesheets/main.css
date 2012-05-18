@@ -135,7 +135,6 @@ dl.portlet .portletHeader {
 #portal-column-content {
     float: left;
     width: 636px;
-    padding-right: 34px;
     margin-bottom: 20px;
 }
 #content {
@@ -277,8 +276,12 @@ dl.portlet .portletHeader {
     background-position: 0 8px;
     background-repeat: no-repeat;
     border-bottom: 1px solid #FFFFFF;
-    margin: 0 20px;
+    margin: 0;
     padding: 20px 10px 20px 50px;
+}
+
+.section-front-page #portal-column-one {
+    margin-left: 8px;
 }
 dl.portlet dd.portletItem {
     margin: 0 20px;
@@ -302,8 +305,12 @@ dl.portlet li {
 }
 .section-front-page #portal-column-two,
 .section-front-page #portal-column-one {
-    width: 490px;
+    width: 482px;
     float: left;
+}
+.section-front-page #portal-column-two {
+    margin-left: 22px;
+    width: 460px;
 }
 .section-front-page #portal-column-content {
     width: 980px;
@@ -324,20 +331,13 @@ dl.portlet li {
     background-repeat: no-repeat;
     border: 0;
     background-color: transparent;
+    background-position: left top;
 }
 .section-front-page dl.portlet .portletHeader,
 .section-front-page dl.portlet .portletHeader a,
 .section-front-page dl.portlet .portletHeader a:link {
     background: none;
     color: #fff;
-}
-.section-front-page dl.portlet dd.portletItem,
-.section-front-page  dl.portlet dd.portletFooter {
-    padding-left: 46px;
-    padding-right: 60px;
-}
-.section-front-page dl.portletNews dd.portletItem {
-    padding-left: 82px;
 }
 .section-front-page dl.portletNews .portletItem a,
 .section-front-page  dl.portlet dd.portletFooter a {
@@ -362,11 +362,11 @@ dl.portlet li {
 .section-front-page dl.portletTwitterPortlet .portletHeader {
     background-image: url(../images/twitter_icon.png);
     background-repeat: no-repeat;
-    background-position: 50px 1px;
+    background-position: 0 0;
     padding-left: 100px;
 }
 .section-front-page dl.portlet .portletHeader {
-    padding: 10px 10px 20px 100px;
+    padding: 8px 10px 20px 60px;
 }
 
 .section-front-page .documentBody,
