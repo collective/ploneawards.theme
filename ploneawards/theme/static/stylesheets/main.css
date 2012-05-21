@@ -40,8 +40,7 @@ dl.portlet .portletHeader {
 }
 #portal-personaltools-wrapper {
     width: 100%;
-    float:right;
-    line-height: 21px;
+    height: 26px;
 }
 #portal-personaltools dd {
     background: none repeat scroll 0 0 #EFF7F9;
@@ -60,6 +59,11 @@ dl.portlet .portletHeader {
 }
 #portal-globalnav {
     margin: 0;
+}
+#portal-top {
+    background-image: url(../images/portalheaderbackground.jpg);
+    background-position: 387px 26px;
+    background-repeat: no-repeat;
 }
 #portal-logo {
     float: left;
