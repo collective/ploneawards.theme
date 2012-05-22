@@ -44,6 +44,10 @@
     <replace css:theme="#portal-personaltools" css:content="#portal-personaltools" />
     <replace css:theme="#portal-siteactions" css:content="#portal-siteactions" />
 
+    <!-- carousel -->
+    <replace  method="raw" css:theme=".carouselWrapper" css:content=".carouselWrapper" />
+    <drop css:content=".carouselWrapper" />
+
     <!-- Global navigation -->
     <prepend css:theme="#portal-globalnav" css:content="#portal-globalnav > *" />
 
@@ -59,6 +63,9 @@
     <drop css:if-content=".section-front-page" css:theme="#subnavig" />
     <drop css:content=".documentByLine" />
     <drop css:content=".navTreeLevel1" />
+
+
+
   </rules>
 
 </rules>

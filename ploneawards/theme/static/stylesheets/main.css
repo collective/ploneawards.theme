@@ -591,10 +591,6 @@ dl.actionMenu {
     border-bottom: 2px solid #fe913c;
     font-size: 18px;
 }
-
-#caroussel {
-    border: 8px solid #fff;
-}
 #portal-columns,
 #subnavig {
     padding: 0 8px;
@@ -606,4 +602,95 @@ dl.actionMenu {
     background-image: url("../images/subnavig_back.png");
     background-position: -16px 50%;
     background-repeat: no-repeat;
+}
+img.image-left, img.image-right, .captioned img {
+    border: 0;
+}
+.section-front-page dl.portletStaticText .portletHeader {
+    background-image: url("../images/static_icon.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+#carousel {
+    background-image: url("../images/carousel_background.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    border: 8px solid #fff;
+    height: 310px;
+}
+#carousel h1,
+#carousel h2,
+#carousel h2 a {
+    color: #fff;
+}
+#carousel div {
+    color: #fff;
+}
+#carousel .scrollable .items .tileItem {
+    height: 310px;
+}
+#carousel .scrollable .items {
+    margin: 10px 30px;
+    height: 310px;
+}
+#carousel .carousel {
+    margin: 0;
+}
+.awardimage {
+    height: 227px;
+    width: 306px;
+    border: 6px solid #0083be;
+}
+.votes {
+    position: absolute;
+    bottom: 10px;
+    height: 80px;
+    width: 110px;
+    text-align: center;
+    padding-top: 30px;
+    background-image: url("../images/votesbutton.png");
+    background-repeat: no-repeat;
+}
+.votebutton {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+.awardimage,
+.awardinfo {
+    float: left;
+}
+.awardinfo {
+    height: 244px;
+    margin-left: 30px;
+    position: relative;
+    width: 520px;
+}
+.numbervotes {
+    font-size: 30px;
+}
+#carousel div.navi a {
+    margin: 20px 3px 3px;
+    background-color: #FF7200;
+}
+#carousel div.navi a.active {
+    background: none repeat scroll 0 0 White;
+}
+.next{
+    background-image: url("../images/rightarrowback.png");
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+#carousel a.next span {
+    margin-left: 0;
+    border-left: 11px solid #60b3df;
+}
+.prev{
+    background-image: url("../images/leftarrowback.png");
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+#carousel a.prev span {
+    margin-left: -14px;
+    border-right: 11px solid #60b3df;
 }
