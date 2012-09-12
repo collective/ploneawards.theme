@@ -626,6 +626,10 @@ img.image-left, img.image-right, .captioned img {
 #carousel div {
     color: #fff;
 }
+#carousel div.carousel,
+#carousel div.scrollable {
+    height: 310px;
+}
 #carousel .scrollable .items .tileItem {
     height: 310px;
 }
