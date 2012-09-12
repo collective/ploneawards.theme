@@ -28,6 +28,7 @@ setup(name='ploneawards.theme',
           'plone.app.theming',
           'plone.app.themingplugins',
           'plone.app.registry',
+          'z3c.jbot',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
