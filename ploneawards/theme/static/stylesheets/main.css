@@ -28,6 +28,7 @@ dl.portlet .portletHeader {
     text-decoration: underline;
     border: 0;
 }
+
 #portal-column-two dl.portletTwitterPortlet a:link,
 #portal-column-two dl.portletTwitterPortlet a:visited {
     color: #FE7D19 !important;
@@ -384,8 +385,18 @@ dl.portlet li {
 .section-front-page dl.portletNews .portletItemDetails {
     margin: 0;
 }
-.newsdescription, .tweetBody {
+.newsdescription {
     line-height: 1.5em;
+}
+dl.portletTwitterPortlet .tweetPicture {
+    margin-right: 10px;
+    clear: left;
+}
+dl.portletTwitterPortlet .tweetPicture img {
+    border-radius: 5px;
+}
+dl.portlet .tweetUsername {
+    display: block;
 }
 dl.portlet .tweetUsername a:link {
     color: #0183be !important;
@@ -396,15 +407,13 @@ dl.portlet .tweetUsername a:link {
 dl.portlet .tweetBody a:link {
     color: #444 !important;
 }
-dl.portlet .tweetDate {
-    margin-left: 52px;
+dl.portlet .tweet {
+    min-height: 50px;
 }
-dl.portlet .tweetText {
-    margin-left: 52px;
-
+dl.portlet .tweetPicture {
 }
 dl.portletNews dd.portletItem, dl.portletTwitterPortlet dd.portletItem {
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
 }
 .section-front-page dl.portletNews dd.portletFooter {
     padding-left: 90px;

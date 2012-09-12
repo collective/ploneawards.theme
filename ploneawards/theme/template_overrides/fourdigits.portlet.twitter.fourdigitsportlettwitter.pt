@@ -36,27 +36,23 @@
                     tal:repeat="obj tweets">
             <dd class="portletItem" tal:define="oddrow repeat/obj/odd"
               tal:attributes="class python:oddrow and 'portletItem even' or 'portletItem odd'">
+              <div class="tweet">
+
                 <tal:block tal:condition="exists: obj/picture">
-                    <div class="tweetPicture">
-                        <img tal:attributes="src obj/picture"
-                             alt="Twitter user picture"/>
-                    </div>
+                  <div class="tweetPicture">
+                    <img tal:attributes="src obj/picture"
+                         alt="Twitter user picture"/>
+                  </div>
                 </tal:block>
-                <div class="tweetText">
-                  <span class="tweetUsername">
-                    <a href="#"
-                       tal:attributes="href obj/author_url"
-                       tal:content="obj/username">User</a>
-                  </span>
-                  <span class="tweetSeparator">:</span>
-                  <span class="tweetBody"
-                        tal:content="structure python: view.expand(obj.text)">Text</span>
-                </div>
-                <span class="portletItemDetails tweetDate">
-                    <tal:date content="python:toLocalizedTime(obj.created_at, long_format=1)">
-                      May 5
-                    </tal:date>
+
+                <span class="tweetUsername">
+                  <a href="#"
+                     tal:attributes="href obj/author_url"
+                     tal:content="obj/username">User</a>
                 </span>
+                <span class="tweetBody"
+                      tal:content="structure python: view.expand(obj.text)">Text</span>
+              </div>
             </dd>
         </tal:tweets>
     </tal:block>
