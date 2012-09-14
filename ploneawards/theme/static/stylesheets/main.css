@@ -632,10 +632,15 @@ img.image-left, img.image-right, .captioned img {
 #carousel h2 a {
     color: #fff;
 }
+#carousel dt.portletHeader {
+    display: none;
+}
 #carousel div {
     color: #fff;
 }
-#carousel div.carousel,
+#carousel .carousel {
+    height: 310px;
+}
 #carousel div.scrollable {
     height: 310px;
 }
