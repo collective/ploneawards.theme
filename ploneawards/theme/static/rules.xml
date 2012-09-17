@@ -45,7 +45,10 @@
     <replace css:theme="#portal-siteactions" css:content="#portal-siteactions" />
 
     <!-- carousel -->
-    <replace css:theme=".carouselWrapper" css:content=".portletCarouselWrapper" />
+    <replace css:theme=".carouselWrapper"
+             css:content=".portletCarouselWrapper" 
+             method="raw"/>
+    <drop css:content=".portletCarouselWrapper" />
 
     <!-- Global navigation -->
     <prepend css:theme="#portal-globalnav" css:content="#portal-globalnav > *" />
