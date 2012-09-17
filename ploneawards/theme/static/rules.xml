@@ -79,6 +79,10 @@
     <drop css:content="div.documentDescription"
           css:if-content="h1#thankyou" />
 
+    <drop css:content="div#edit-bar"
+          css:if-not-content="li#contentview-edit"/>
+    <drop css:theme="#subnavig" />
+
   </rules>
 
 </rules>
