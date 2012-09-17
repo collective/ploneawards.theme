@@ -687,6 +687,9 @@ img.image-left, img.image-right, .captioned img {
     position: relative;
     width: 520px;
 }
+div.votes a {
+    color: white;
+}
 .numbervotes {
     font-size: 30px;
 }
@@ -714,4 +717,19 @@ img.image-left, img.image-right, .captioned img {
 #carousel a.prev span {
     margin-left: -14px;
     border-right: 11px solid #60b3df;
+}
+
+#tweetme {
+    display: inline;
+    float: left;
+    margin-right: 10px;
+}
+#tweetme iframe {
+    border: 0;
+}
+
+p.votetoo {
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #666;
 }
