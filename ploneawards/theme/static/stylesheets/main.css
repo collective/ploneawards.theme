@@ -620,6 +620,9 @@ img.image-left, img.image-right, .captioned img {
     background-position: 0 0;
     background-repeat: no-repeat;
 }
+#carousel-replacement {
+    padding: 30px 40px;
+}
 #carousel {
     background-image: url("../images/carousel_background.jpg");
     background-position: 0 0;

@@ -45,8 +45,7 @@
     <replace css:theme="#portal-siteactions" css:content="#portal-siteactions" />
 
     <!-- carousel -->
-    <replace  method="raw" css:theme=".carouselWrapper" css:content=".portletCarouselWrapper" />
-    <drop css:content=".portletCarouselWrapper" />
+    <replace css:theme=".carouselWrapper" css:content=".portletCarouselWrapper" />
 
     <!-- Global navigation -->
     <prepend css:theme="#portal-globalnav" css:content="#portal-globalnav > *" />
@@ -64,7 +63,18 @@
     <drop css:content=".documentByLine" />
     <drop css:content=".navTreeLevel1" />
 
-
+    <!-- nomination view -->
+    <drop css:content=".portletCarouselWrapper"
+          css:if-content="#carousel-replacement" />
+    <replace css:theme-children="#carousel"
+             css:content="#carousel-replacement"
+             css:if-content="#carousel-replacement"
+             method="raw"/>
+    <drop css:content="#carousel-replacement" />
+    <drop css:content="h1.documentFirstHeading"
+          css:if-content="h1#thankyou" />
+    <drop css:content="div.documentDescription"
+          css:if-content="h1#thankyou" />
 
   </rules>
 
