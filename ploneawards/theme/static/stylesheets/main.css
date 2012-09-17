@@ -628,7 +628,7 @@ img.image-left, img.image-right, .captioned img {
     background-repeat: no-repeat;
 }
 #carousel-replacement {
-    padding: 30px 40px;
+    padding: 30px 40px 0 40px;
 }
 #carousel {
     background-image: url("../images/carousel_background.jpg");
@@ -740,3 +740,16 @@ p.votetoo {
     font-weight: bold;
     color: #666;
 }
+
+#nomination_listing nomination.odd {
+    clear: both;
+}
+#nomination_listing .nomination_image {
+    height: 150px;
+    width: 200px;
+    border: 0;
+    float: left;
+    margin-right: 10px;
+}
+
+
