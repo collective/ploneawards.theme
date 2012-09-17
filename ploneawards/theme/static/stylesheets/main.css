@@ -589,16 +589,23 @@ dl.actionMenu {
 #edit-bar {
     border-color: #0083BE;
 }
-.register a {
-    font-size: 24px;
-    border-bottom: 2px solid #fe913c !important;
+a.register  {
+    font-size: 0.1px;
+    color: transparent !important;
+    border-bottom: 0 !important;
+    background: url("../images/registerbutton.png") no-repeat;
+    display: block;
+    width: 200px;
+    height: 50px;
 }
-.register {
-    text-align: right;
-}
-.registernow a {
-    border-bottom: 2px solid #fe913c;
-    font-size: 18px;
+a.nominate  {
+    font-size: 0.1px;
+    color: transparent !important;
+    border-bottom: 0 !important;
+    background: url("../images/registerbutton.png") no-repeat;
+    display: block;
+    width: 200px;
+    height: 50px;
 }
 #portal-columns,
 #subnavig {
