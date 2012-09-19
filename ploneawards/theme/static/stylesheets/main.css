@@ -788,3 +788,7 @@ p.center {
 .name {
  color: #FE913C;
 }
+
+#hidden-portal-personaltools {
+    display: none;
+}

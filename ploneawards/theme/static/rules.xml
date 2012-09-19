@@ -41,7 +41,7 @@
     <replace css:theme="#portal-searchbox" css:content="#portal-searchbox" />
 
     <!-- personal -->
-    <replace css:theme="#portal-personaltools" css:content="#portal-personaltools" />
+    <replace css:theme-children="#hidden-portal-personaltools" css:content="#portal-personaltools" />
     <replace css:theme="#portal-siteactions" css:content="#portal-siteactions" />
 
     <!-- carousel -->
@@ -78,8 +78,7 @@
           css:if-content="h1#thankyou" />
     <drop css:content="div.documentDescription"
           css:if-content="h1#thankyou" />
-
-    <drop css:content="div#edit-bar"
+    <drop css:content="body.portaltype-ploneawards-contenttypes-nomination div#edit-bar"
           css:if-not-content="li#contentview-edit"/>
     <drop css:theme="#subnavig" />
 
