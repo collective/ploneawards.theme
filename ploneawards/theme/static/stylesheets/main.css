@@ -313,7 +313,7 @@ dl.portlet li {
     margin-left: 22px;
     width: 460px;
 }
-.section-front-page #portal-column-content {
+#portal-column-content {
     width: 966px;
 }
 .section-front-page #portal-column-content #content {
@@ -602,7 +602,7 @@ a.nominate  {
     font-size: 0.1px;
     color: transparent !important;
     border-bottom: 0 !important;
-    background: url("../images/registerbutton.png") no-repeat;
+    background: url("../images/nominatebutton.png") no-repeat;
     display: block;
     width: 200px;
     height: 50px;
@@ -741,15 +741,47 @@ p.votetoo {
     color: #666;
 }
 
-#nomination_listing nomination.odd {
-    clear: both;
+body.portaltype-ploneawards-contenttypes-nominationfolder #portal-columns {
+    margin-top: 0;
 }
-#nomination_listing .nomination_image {
-    height: 150px;
-    width: 200px;
-    border: 0;
-    float: left;
-    margin-right: 10px;
+body.portaltype-ploneawards-contenttypes-nominationfolder .documentFirstHeading {
+    margin: 0.5em 0;
 }
 
+div#nomination_listing div.position-0 {
+    margin-left: -100%;
+}
+div.nomination {
+    background: url("../images/homepage_portlet_back.png") no-repeat;
+}
+div.nomination_header {
+    background: url("../images/static_icon.png") no-repeat;
+    font-size: 16px;
+    padding: 4px 10px 20px 60px;
+}
+.nomination_header h3 {
+   font-family: Trebuchet MS Bold,arial;
+}
+.nomination_header a {
+    color: white !important;
+    overflow: hidden;
+}
+#nomination_listing .nomination_image {
+    height: 200px;
+    width: 160px;
+    border: 0;
+    float: left;
+    margin-right: 15px;
+}
+
+#nomination_listing .nomination_image a.vote,
+#content-core p a.vote {
+    display: inline-block;
+    padding-top: 5px;
+    border: 0;
+}
+
+p.center {
+    text-align: center;
+}
 
