@@ -35,16 +35,19 @@ setup(name='ploneawards.theme',
       include_package_data=True,
       zip_safe=False,
       install_requires=[
-          'setuptools',
+          'plone.app.registry',
           'plone.app.theming',
           'plone.app.themingplugins',
-          'plone.app.registry',
+          'setuptools',
           'z3c.jbot',
-          # -*- Extra requirements: -*-
       ],
+      extras_require={
+          'test': [
+              'plone.app.testing',
+              'plone.testing',
+          ],
+      },
       entry_points="""
-      # -*- Entry points: -*-
-
       [z3c.autoinclude.plugin]
       target = plone
       """,
