@@ -175,7 +175,7 @@ html, body {
     position: relative;
 }
 #dfooter {
-    background-color: #eff7f9;
+    background-color: #fff;
     background-image: url(../images/footer_back.png);
     background-repeat: repeat-x;
     height: 430px;
@@ -191,6 +191,7 @@ html, body {
 /* sponsors */
 #portal-footer {
     width: 980px;
+    padding-top:55px;
 }
 .sponsor {
     line-height: 72px;
