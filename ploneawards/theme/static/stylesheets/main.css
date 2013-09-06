@@ -793,3 +793,21 @@ p.center {
 #hidden-portal-personaltools {
     display: none;
 }
+
+#portal-footer dt {border-bottom:1px solid #000;font-weight:bold;font-size:1.2em;margin:20px 0;}
+
+   
+
+#portal-footer dd,
+#portal-footer dd a {display:inline;line-height:100px;    vertical-align: text-top;}
+
+#portal-footer dd a {margin-right:10px;}
+
+
+
+#dfooter {
+background: #FFF; /* for non-css3 browsers */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EFF7F9', endColorstr='#FFFFFF'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#EFF7F9), to(#FFF)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #EFF7F9,  #FFF); /* for firefox 3.6+ */
+}
