@@ -109,9 +109,9 @@ dl.portlet .portletHeader {
 #portal-globalnav li a {
     background-image: url(../images/menuitem_back.png);
     background-repeat: repeat-x;
-    border: 1px solid #5bbbed;
+    border: 1px solid #3E8740;
     border-radius: 4px 4px 4px 4px;
-    color: #FFFFFF !important;
+    color: #082C08 !important;
     font-size: 110%;
     margin: 0 0 0 6px;
     padding: 11px 10px 6px 10px;
@@ -119,13 +119,24 @@ dl.portlet .portletHeader {
     text-transform: uppercase;
     white-space: normal;
 }
+
+#portal-globalnav li a {
+background: #357B33; /* for non-css3 browsers */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#357B33', endColorstr='#FFFFFF'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#357B33), to(#FFF)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #357B33,  #FFF); /* for firefox 3.6+ */
+}
+
 #portal-globalnav .selected a:hover,
 #portal-globalnav .selected a,
 #portal-globalnav a:hover {
-    background-image: url(../images/menuitem_active.png);
-    background-repeat: repeat-x;
-    border: 1px solid #dd6402;
+background: #FFD40C; /* for non-css3 browsers */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD40C', endColorstr='#FFFFFF'); /* for IE */
+background: -webkit-gradient(linear, left top, left bottom, from(#FFD40C), to(#FFF)); /* for webkit browsers */
+background: -moz-linear-gradient(top,  #FFD40C,  #FFF); /* for firefox 3.6+ */
+
 }
+
 
 /* end navig */
 
@@ -238,10 +249,10 @@ html, body {
 
 /* font styling */
 h1 {
-    color: #0083be;
+    color: #256622;
 }
 h2, h3 {
-    color: #fe913c;
+    color: #256622;
 }
 #content .documentDescription {
     line-height: 1.5em;
@@ -802,8 +813,6 @@ p.center {
 #portal-footer dd a {display:inline;line-height:100px;    vertical-align: text-top;}
 
 #portal-footer dd a {margin-right:10px;}
-
-
 
 #dfooter {
 background: #FFF; /* for non-css3 browsers */
