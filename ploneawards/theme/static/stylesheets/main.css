@@ -71,17 +71,22 @@ dl.portlet .portletHeader {
     margin: 0;
     clear: both;
 }
-.email, .phone {
+
+.email {
+    background: url("/++theme++ploneawards.theme/images/email_icon.png") no-repeat;
     color: #92d0f9;
     font-size: 80%;
-}
-.email img, .phone img {
-    padding-right: 4px;
-    vertical-align: middle;
-}
-.email img {
     padding-left: 20px;
 }
+
+.phone {
+    display: none;
+    background: url("/++theme++ploneawards.theme/images/phone_icon.png") no-repeat;
+    color: #92d0f9;
+    font-size: 80%;
+    padding-left: 20px;
+}
+
 .contentfooter {
     line-height: 21px;
     margin-bottom: 20px;
