@@ -825,3 +825,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#EFF7F9', endC
 background: -webkit-gradient(linear, left top, left bottom, from(#EFF7F9), to(#FFF)); /* for webkit browsers */
 background: -moz-linear-gradient(top,  #EFF7F9,  #FFF); /* for firefox 3.6+ */
 }
+
+
+.portaltype-ploneawards-contenttypes-nomination #viewlet-social-like {display:block !Important;}
+
+iframe.twitter-share-button {border:0;}
