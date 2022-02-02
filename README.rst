@@ -13,7 +13,7 @@ Mostly Harmless
 ---------------
 
 .. image:: https://secure.travis-ci.org/collective/ploneawards.theme.png?branch=master
-    :target: http://travis-ci.org/collective/ploneawards.theme
+    :target: https://travis-ci.org/collective/ploneawards.theme
 
 .. image:: https://coveralls.io/repos/collective/ploneawards.theme/badge.png?branch=master
     :target: https://coveralls.io/r/collective/ploneawards.theme
